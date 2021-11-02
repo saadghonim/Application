@@ -339,7 +339,7 @@ header{
 
 /* ~~~~~~~~~~~~~~~~start about_app~~~~~~~~~~~~~~~~~~~ */
 .about_app{
-  padding: 80px 0;
+  padding: 0 0 80px ;
 }
 .about_app .intro_text h3 ,.about_app .intro_text p{
   color: rgb(33, 33, 33);
