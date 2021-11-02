@@ -14,6 +14,9 @@ $(document).ready(function(){
   $(".moboverlay").click(function(){
     $(".close_ ").trigger("click");
   });
+  $(".ul_navbar a").click(function(){
+    $(".close_ ").trigger("click");
+  })
 /* ~~~~~~~~~~~~~~~~~~end header~~~~~~~~~~~~~~~~~~~ */
 
   /*~~~~~~~~~~~~~~~~~~~~start slider~~~~~~~~~~~~~~~~~~~~ */
