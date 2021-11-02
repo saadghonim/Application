@@ -663,6 +663,7 @@ footer{
   .footer_div .btn_intro{
     margin: 0;
     display: flex;
+    justify-content:center;
   }
   .footer_div h4{
     margin: 0 0 20px 0;
