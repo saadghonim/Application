@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 /* ~~~~~~~~~~~~~~~~~~start header~~~~~~~~~~~~~~~~~~~ */
+if ($(window).width() <= 767) {
   $(".btn_bars").click(function(){
     $(".ul_navbar").toggle(500);
     $(".moboverlay").fadeIn(500);
@@ -17,6 +18,11 @@ $(document).ready(function(){
   $(".ul_navbar a").click(function(){
     $(".close_ ").trigger("click");
   })
+}
+$(".ul_navbar a").click(function(){
+  $(".moboverlay").fadeOut(500);
+  $("body").removeClass("over");
+})
 /* ~~~~~~~~~~~~~~~~~~end header~~~~~~~~~~~~~~~~~~~ */
 
   /*~~~~~~~~~~~~~~~~~~~~start slider~~~~~~~~~~~~~~~~~~~~ */
