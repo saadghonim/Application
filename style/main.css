@@ -194,10 +194,10 @@ header{
 .close_{
   display: none;
 }
-.anc_lang:hover,.btn_bars:hover,.close_{
+.btn_bars:hover,.close_{
   color: #af7f51;
 }
-.ul_navbar li a:hover{
+.anc_lang:hover, .ul_navbar li a:hover{
   color: #c9b099;
 
 }
