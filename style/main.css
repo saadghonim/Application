@@ -521,11 +521,11 @@ html[dir="ltr"] .Features_div {
   margin-inline-end: 5px;
 }
 .slider  .owl-dots .owl-dot.active{
-  background-image: -moz-linear-gradient( -90deg, rgb(36,161,210) 0%, rgb(6,79,129) 100%);
-  background-image: -webkit-linear-gradient( -90deg, rgb(36,161,210) 0%, rgb(6,79,129) 100%);
-  background-image: -ms-linear-gradient( -90deg, rgb(36,161,210) 0%, rgb(6,79,129) 100%);
+  background-color: #af7f51;
 }
-
+.slider  .owl-dots .owl-dot:focus{
+  outline: 0;
+}
 .slide_hover a{
   position: absolute;
   top: 0;
