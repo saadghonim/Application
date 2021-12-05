@@ -251,8 +251,8 @@ header{
       header {
         padding: 10px 0 30px;
     }
-    .logo img{
-      width: 60px;
+     header .logo img{
+      width: 50px;
     }
 }
 /* ~~~~~~~~~~~~~~~~~~end header~~~~~~~~~~~~~~~~~~~ */
