@@ -300,12 +300,14 @@ header{
 }
 
 .intro_text p{
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Tajawal";
   color: rgb(255, 255, 255);
   font-weight: 500;
   margin-bottom: 40px;
   text-align: start;
+  line-height: 1.7;
+
 }
 .btn_intro a:first-child{
   margin-inline-end: 10px;
@@ -361,6 +363,7 @@ header{
 }
 .about_app .intro_text h3 ,.about_app .intro_text p{
   color: rgb(33, 33, 33);
+  text-transform: capitalize;
 }
 .about_app .screen_ {
   text-align: center;
@@ -617,6 +620,34 @@ footer{
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
 }
+.about_app .btn_intro{
+  display: flex;
+}
+.anc_about{
+  width: 177px;
+  height:51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #af7f51;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+
+  }
+  .about_app .btn_intro .anc_about:last-child{
+    border:2px solid #af7f51;
+    background-color: #ffffff;
+    color: #af7f51;
+  }
+  .about_app .btn_intro .anc_about:last-child:hover{
+  background-color: #af7f51;
+  color: #ffffff;
+  }
+  .about_app .btn_intro .anc_about:first-child:hover{
+    background-color: #af9073;
+    color: aliceblue;
+  }
 @media(max-width:767px){
   .footer_div {
     text-align: center;
