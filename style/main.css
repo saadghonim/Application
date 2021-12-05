@@ -134,25 +134,27 @@ overflow: hidden;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #e0e0e0; 
+  background: #af7f51; 
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-::-webkit-scrollbar-thumb:hover{
-  background-image: linear-gradient( -90deg, rgb(36,161,210) 0%, rgb(6,79,129) 100%);
-}
+
 /* ~~~~~~~~~~~~~~~~start header~~~~~~~~~~~~~~~~~~~ */
 header{
-  padding: 30px 0 100px;
+  /* padding: 30px 0 100px; */
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background-color: #6541c1;
+  background-color: #AF7F51;
   z-index: 10;
+}
+.logo img{
+  width: 63px;
+  height: auto;
 }
 .ul_navbar{
   display: flex;
@@ -192,8 +194,12 @@ header{
 .close_{
   display: none;
 }
-.ul_navbar li a:hover,.anc_lang:hover,.btn_bars:hover,.close_{
-  color: #d43396;
+.anc_lang:hover,.btn_bars:hover,.close_{
+  color: #af7f51;
+}
+.ul_navbar li a:hover{
+  color: #c9b099;
+
 }
 @media(max-width:767px){
   .ul_navbar{
@@ -237,7 +243,7 @@ header{
       cursor: pointer;
     }
     .close_:hover{
-      color: #6541c1;
+      color: #AF7F51;
     }
     html[dir="ltr"] .close_ {
       right: 20px;
@@ -246,7 +252,7 @@ header{
         padding: 10px 0 30px;
     }
     .logo img{
-      width: 140px;
+      width: 60px;
     }
 }
 /* ~~~~~~~~~~~~~~~~~~end header~~~~~~~~~~~~~~~~~~~ */
@@ -257,8 +263,7 @@ header{
 .intro_parant{
   overflow: hidden;
   margin-bottom: 100px;
-  background-image: url("../images/1.png");
-  background-size: cover;
+  background-color: #AF7F51;
   padding: 80px 0 100px;
 
 }
@@ -423,7 +428,7 @@ html[dir="ltr"] .Features_div {
 
 .Features_div span{
   font-size: 48px;
-  color: rgb(212, 51, 150);
+  color: #af7f51;
   margin-inline-end: 20px;
 }
 .div_text h4{
@@ -546,6 +551,10 @@ footer{
 .footer_div .logo{
   margin-bottom: 20px;
 }
+.footer_div .logo{
+  width: 90px;
+
+}
 .footer_div p{
   font-size: 14px;
   font-family: "Tajawal";
@@ -580,7 +589,7 @@ footer{
   margin-bottom: 10px;
 }
 .contct_us i{
-  color: #d43396;
+  color: #af7f51;
   margin-inline-end: 5px;
 }
 .footer_div .btn_intro a:first-child{
@@ -655,7 +664,7 @@ footer{
   -o-transition: .5s;
 }
 .social-media a:hover{
-  color: #d43396;
+  color: #af7f51;
 }
 .social-media a:not(.social-media a:last-child){
   margin-inline-end: 30px;

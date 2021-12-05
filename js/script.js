@@ -26,14 +26,14 @@ $(".ul_navbar a").click(function(){
 jQuery(window).on('scroll', function() {
   if(jQuery(window).scrollTop() > 200) {
       jQuery('header').css({
-          "background-color": "#6541c1",
+          "background-color": "#AF7F51",
           "position": "fixed",
           "box-shadow": "rgb(136 153 166 / 20%) 0px 0px 15px 0px, rgb(136 153 166 / 15%) 0px 0px 3px 1px"
         });
   } else {
     jQuery('header').css({
       "background-color":"unset",
-      "padding":"15px 0",
+      "padding":"5px 0",
       "box-shadow": "unset",
       "position": "absolute"
     });
