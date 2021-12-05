@@ -161,7 +161,7 @@ header{
 }
 .ul_navbar li a{
   margin-inline-end: 19px;
-  font-size: 19px;
+  font-size: 16px;
   font-family: "Tajawal";
   font-weight: 500;
   color: rgb(255, 255, 255);
@@ -178,7 +178,7 @@ header{
 }
 .anc_lang{
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Tajawal";
   color: #ffffff;
   transition: .5s;
@@ -264,7 +264,7 @@ header{
   overflow: hidden;
   margin-bottom: 100px;
   background-color: #AF7F51;
-  padding: 80px 0 100px;
+  padding: 200px 0 100px;
 
 }
 .backgr_{
@@ -346,6 +346,8 @@ header{
   .intro_parant {
     margin-bottom: 20px;
     padding-bottom: 50px;
+  padding: 130px 0 100px;
+
   }
   .intro{
     text-align: center;
@@ -402,7 +404,7 @@ html[dir="ltr"] .parant_div {
   }
 .Feat_title_{
   text-align: start;
-  font-size: 30px;
+  font-size: 26px;
   font-family: "Tajawal";
   color: rgb(33, 33, 33);
   font-weight: 700;
@@ -414,7 +416,7 @@ html[dir="ltr"] .parant_div {
   border-radius: 14px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
-  padding: 15px 15px 20px;
+  padding: 20px;
   direction: rtl;
   margin: 5px 10px 30px 5px;
 }
@@ -432,7 +434,7 @@ html[dir="ltr"] .Features_div {
   margin-inline-end: 20px;
 }
 .div_text h4{
-  font-size: 24px;
+  font-size: 18px;
   font-family: "Tajawal";
   color: rgb(33, 33, 33);
   font-weight: 500;
