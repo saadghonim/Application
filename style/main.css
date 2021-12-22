@@ -398,7 +398,6 @@ header{
 .parant_div{
   text-align: start;
   height: 420px;
-  overflow-y:scroll;
   direction: ltr;
 }
 html[dir="ltr"] .parant_div {
@@ -421,7 +420,7 @@ html[dir="ltr"] .parant_div {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
   padding: 20px;
   direction: rtl;
-  margin: 5px 10px 30px 5px;
+  margin: 5px 10px 20px 5px;
 }
 .Features_div:last-child{
   margin-bottom: 5px;
@@ -437,11 +436,11 @@ html[dir="ltr"] .Features_div {
   margin-inline-end: 20px;
 }
 .div_text h4{
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Tajawal";
   color: rgb(33, 33, 33);
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .div_text p{
   font-size: 15px;
@@ -590,7 +589,7 @@ footer{
   font-size: 16px;
   font-family: "Tajawal";
   color: rgb(38, 50, 56);
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 .contct_us i{
@@ -680,11 +679,12 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  flex-direction: column;
 }
 .social-media{
   display: flex;
-  justify-content: center;
+  justify-content: start;
   margin-bottom: 15px;
 }
 .social-media a{
@@ -702,12 +702,21 @@ footer{
 .social-media a:not(.social-media a:last-child){
   margin-inline-end: 30px;
 }
-.div_copy h6{
-  margin-inline-end: 10px;
+.div_copy h6 , .div_copy p{
   font-size: 14px;
   font-family: "Tajawal";
   color: rgb(57, 60, 60);
   font-weight: 400;
 }
+.div_copy h6 {
+  margin-inline-end: 10px;
 
+}
+.div_copy p{
+  margin-bottom: 10px;
+}
+.div_copy div{
+  display: flex;
+  align-items: center;
+}
 /* ~~~~~~~~~~~~~~~~~~end copy_rights~~~~~~~~~~~~~~~~~~~ */
