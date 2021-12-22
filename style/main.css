@@ -153,7 +153,7 @@ header{
   z-index: 10;
 }
 .logo img{
-  width: 63px;
+  width: 55px;
   height: auto;
 }
 .ul_navbar{
@@ -239,7 +239,6 @@ header{
       -o-transition: .5s;
       position: absolute;
       top: 20px;
-      left: 20px;
       cursor: pointer;
     }
     .close_:hover{
@@ -248,6 +247,9 @@ header{
     html[dir="ltr"] .close_ {
       right: 20px;
       }
+      html[dir="rtl"] .close_ {
+        left: 20px;
+        }
       header {
         padding: 10px 0 30px;
     }
@@ -297,6 +299,7 @@ header{
   color: rgb(255, 255, 255);
   font-weight: 700;
   margin-bottom: 30px;
+  text-transform: capitalize;
 }
 
 .intro_text p{
@@ -481,6 +484,7 @@ html[dir="ltr"] .Features_div {
 }
 .slider_parant .Feat_title_ {
   text-align: center;
+  text-transform: capitalize;
 }
 .slider_parant p{
   font-size: 16px;
@@ -573,6 +577,8 @@ footer{
   font-weight: 700;
   margin-bottom: 20px;
   margin-inline-start: 30px;
+  text-transform: capitalize;
+
 }
 .contct_us{
   margin-inline-start: 30px;
@@ -582,6 +588,7 @@ footer{
   font-family: "Tajawal";
   color: rgb(117, 117, 117);
   font-weight: 500;
+
 }
 
 .contct_us a{
@@ -646,9 +653,30 @@ footer{
     background-color: #af9073;
     color: aliceblue;
   }
+  .social-media{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 15px;
+  }
+  .social-media a{
+    font-size: 19px;
+    color: rgb(97, 97, 97);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+  }
+  .social-media a:hover{
+    color: #af7f51;
+  }
+  .social-media a:not(.social-media a:last-child){
+    margin-inline-end: 30px;
+  }
 @media(max-width:767px){
   .footer_div {
     text-align: center;
+    margin-bottom: 40px;
   }
   .footer_div p{
     text-align: justify;
@@ -669,7 +697,15 @@ footer{
   .footer_div p{
     margin-bottom: 30px;
   }
+  .social-media{
+    justify-content: center;
+  }
+  .anc_about{
+    width: 150px;
+    height: 45px;
+  }
 }
+
 /* ~~~~~~~~~~~~~~~~~~end footer~~~~~~~~~~~~~~~~~~~ */
 
 
@@ -681,26 +717,7 @@ footer{
   margin-bottom: 20px;
   flex-direction: column;
 }
-.social-media{
-  display: flex;
-  justify-content: start;
-  margin-bottom: 15px;
-}
-.social-media a{
-  font-size: 19px;
-  color: rgb(97, 97, 97);
-  transition: .5s;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -ms-transition: .5s;
-  -o-transition: .5s;
-}
-.social-media a:hover{
-  color: #af7f51;
-}
-.social-media a:not(.social-media a:last-child){
-  margin-inline-end: 30px;
-}
+
 .div_copy h6 , .div_copy p{
   font-size: 14px;
   font-family: "Tajawal";

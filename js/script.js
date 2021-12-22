@@ -26,9 +26,13 @@ $(".ul_navbar a").click(function(){
 jQuery(window).on('scroll', function() {
   if(jQuery(window).scrollTop() > 200) {
       jQuery('header').css({
-          "background-color": "#AF7F51",
+          "background-color": "#ffff",
           "position": "fixed",
         });
+        jQuery('header a').css({
+          "color": "#AF7F51"
+        })
+        jQuery('header .logo img').attr('src','images/logo_f.svg')
   } else {
     jQuery('header').css({
       "background-color":"unset",
@@ -36,8 +40,43 @@ jQuery(window).on('scroll', function() {
       "box-shadow": "unset",
       "position": "absolute"
     });
+    jQuery('header a').css({
+      "color": "#ffff"
+    })
+    jQuery('header .logo img').attr('src','images/logo.svg')
   }
 });
+if ($(window).width() <= 767){
+  jQuery(window).on('scroll', function() {
+    if(jQuery(window).scrollTop() > 200) {
+        jQuery('header').css({
+            "background-color": "#ffff",
+            "position": "fixed",
+          });
+          jQuery('header a').css({
+            "color": "#AF7F51"
+          })
+          jQuery('header .anc_lang, header .btn_bars').css({
+            "color": "#AF7F51"
+          })
+          jQuery('header .logo img').attr('src','images/logo_f.svg')
+    } else {
+      jQuery('header').css({
+        "background-color":"unset",
+        "padding":"5px 0",
+        "box-shadow": "unset",
+        "position": "absolute"
+      });
+      jQuery('header a').css({
+        "color": "#AF7F51"
+      })
+      jQuery('header .anc_lang, header .btn_bars').css({
+        "color": "#ffff"
+      })
+      jQuery('header .logo img').attr('src','images/logo.svg')
+    }
+  });
+}
 /* ~~~~~~~~~~~~~~~~~~end header~~~~~~~~~~~~~~~~~~~ */
 
   /*~~~~~~~~~~~~~~~~~~~~start slider~~~~~~~~~~~~~~~~~~~~ */
