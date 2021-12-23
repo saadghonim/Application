@@ -24,59 +24,20 @@ $(".ul_navbar a").click(function(){
   $("body").removeClass("over");
 })
 jQuery(window).on('scroll', function() {
-  if(jQuery(window).scrollTop() > 200) {
+  if(jQuery(window).scrollTop() > 20) {
       jQuery('header').css({
           "background-color": "#ffff",
-          "position": "fixed",
         });
-        jQuery('header a').css({
-          "color": "#AF7F51"
-        })
         jQuery('header .logo img').attr('src','images/logo_f.svg')
   } else {
     jQuery('header').css({
       "background-color":"unset",
-      "padding":"5px 0",
-      "box-shadow": "unset",
-      "position": "absolute"
     });
-    jQuery('header a').css({
-      "color": "#ffff"
-    })
+
     jQuery('header .logo img').attr('src','images/logo.svg')
   }
 });
-if ($(window).width() <= 767){
-  jQuery(window).on('scroll', function() {
-    if(jQuery(window).scrollTop() > 200) {
-        jQuery('header').css({
-            "background-color": "#ffff",
-            "position": "fixed",
-          });
-          jQuery('header a').css({
-            "color": "#AF7F51"
-          })
-          jQuery('header .anc_lang, header .btn_bars').css({
-            "color": "#AF7F51"
-          })
-          jQuery('header .logo img').attr('src','images/logo_f.svg')
-    } else {
-      jQuery('header').css({
-        "background-color":"unset",
-        "padding":"5px 0",
-        "box-shadow": "unset",
-        "position": "absolute"
-      });
-      jQuery('header a').css({
-        "color": "#AF7F51"
-      })
-      jQuery('header .anc_lang, header .btn_bars').css({
-        "color": "#ffff"
-      })
-      jQuery('header .logo img').attr('src','images/logo.svg')
-    }
-  });
-}
+
 /* ~~~~~~~~~~~~~~~~~~end header~~~~~~~~~~~~~~~~~~~ */
 
   /*~~~~~~~~~~~~~~~~~~~~start slider~~~~~~~~~~~~~~~~~~~~ */
@@ -135,3 +96,19 @@ if ($(window).width() <= 767){
         });
 
 });
+var fixedBar = document.getElementById("fixed_bar");
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    fixedBar.style.cssText = 
+    'top: 0; transition: .5s;'
+  } else {
+    fixedBar.style.cssText = 
+    'top: -100px; transition:.5s;'
+
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+

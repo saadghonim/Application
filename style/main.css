@@ -145,7 +145,7 @@ overflow: hidden;
 /* ~~~~~~~~~~~~~~~~start header~~~~~~~~~~~~~~~~~~~ */
 header{
   padding: 5px 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -164,7 +164,7 @@ header{
   font-size: 16px;
   font-family: "Tajawal";
   font-weight: 500;
-  color: rgb(255, 255, 255);
+  color: #000000;
   text-transform:capitalize;
   margin-inline-end: 30px;
   transition: .5s;
@@ -180,7 +180,7 @@ header{
   text-transform: capitalize;
   font-size: 16px;
   font-family: "Tajawal";
-  color: #ffffff;
+  color: #000000;
   transition: .5s;
   direction: ltr;
 }
@@ -309,6 +309,7 @@ header{
   font-weight: 500;
   margin-bottom: 40px;
   text-align: start;
+  text-transform: capitalize;
   line-height: 1.7;
 
 }
@@ -351,7 +352,7 @@ header{
   .intro_parant {
     margin-bottom: 20px;
     padding-bottom: 50px;
-  padding: 130px 0 100px;
+  padding: 150px 0 100px;
 
   }
   .intro{
@@ -444,12 +445,15 @@ html[dir="ltr"] .Features_div {
   color: rgb(33, 33, 33);
   font-weight: 500;
   margin-bottom: 8px;
+  text-transform: capitalize;
 }
 .div_text p{
   font-size: 15px;
   font-family: "Tajawal";
   color: rgb(117, 117, 117);
   font-weight: 400;
+  text-transform: capitalize;
+
 }
 
 
@@ -612,6 +616,7 @@ footer{
   margin-inline-start: 30px;
 }
 .btn_intro .anc_intro{
+  text-transform: capitalize;
   transition: .5s;
   -webkit-transition: .5s;
   -moz-transition: .5s;
@@ -723,6 +728,7 @@ footer{
   font-family: "Tajawal";
   color: rgb(57, 60, 60);
   font-weight: 400;
+  text-transform: capitalize;
 }
 .div_copy h6 {
   margin-inline-end: 10px;
